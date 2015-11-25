@@ -22,10 +22,18 @@
 		67F7AB1C1A87052A001C11AF /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F7AB1B1A87052A001C11AF /* Card.m */; };
 		67F7AB1F1A8706B0001C11AF /* CardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F7AB1E1A8706B0001C11AF /* CardNumber.m */; };
 		67F7AB241A886A1B001C11AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F7AB221A886A1B001C11AF /* Main.storyboard */; };
+		BBEFF96D1BFFBB780075662F /* CardFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEFF96C1BFFBB780075662F /* CardFormUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		67F7AB0B1A86FAC9001C11AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67F7AAE91A86FAC8001C11AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67F7AAF01A86FAC8001C11AF;
+			remoteInfo = CardForm;
+		};
+		BBEFF96F1BFFBB780075662F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 67F7AAE91A86FAC8001C11AF /* Project object */;
 			proxyType = 1;
@@ -61,6 +69,9 @@
 		67F7AB1E1A8706B0001C11AF /* CardNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardNumber.m; sourceTree = "<group>"; };
 		67F7AB201A8707E3001C11AF /* CardType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardType.h; sourceTree = "<group>"; };
 		67F7AB231A886A1B001C11AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBEFF96A1BFFBB770075662F /* CardFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBEFF96C1BFFBB780075662F /* CardFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFormUITests.swift; sourceTree = "<group>"; };
+		BBEFF96E1BFFBB780075662F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +83,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		67F7AB071A86FAC9001C11AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBEFF9671BFFBB770075662F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -120,6 +138,7 @@
 			children = (
 				67F7AAF31A86FAC8001C11AF /* CardForm */,
 				67F7AB0D1A86FAC9001C11AF /* CardFormTests */,
+				BBEFF96B1BFFBB770075662F /* CardFormUITests */,
 				67F7AAF21A86FAC8001C11AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +148,7 @@
 			children = (
 				67F7AAF11A86FAC8001C11AF /* CardForm.app */,
 				67F7AB0A1A86FAC9001C11AF /* CardFormTests.xctest */,
+				BBEFF96A1BFFBB770075662F /* CardFormUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +197,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BBEFF96B1BFFBB770075662F /* CardFormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBEFF96C1BFFBB780075662F /* CardFormUITests.swift */,
+				BBEFF96E1BFFBB780075662F /* Info.plist */,
+			);
+			path = CardFormUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,12 +244,31 @@
 			productReference = 67F7AB0A1A86FAC9001C11AF /* CardFormTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BBEFF9691BFFBB770075662F /* CardFormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBEFF9731BFFBB780075662F /* Build configuration list for PBXNativeTarget "CardFormUITests" */;
+			buildPhases = (
+				BBEFF9661BFFBB770075662F /* Sources */,
+				BBEFF9671BFFBB770075662F /* Frameworks */,
+				BBEFF9681BFFBB770075662F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBEFF9701BFFBB780075662F /* PBXTargetDependency */,
+			);
+			name = CardFormUITests;
+			productName = CardFormUITests;
+			productReference = BBEFF96A1BFFBB770075662F /* CardFormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		67F7AAE91A86FAC8001C11AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Hellosunschein;
 				TargetAttributes = {
@@ -229,6 +277,10 @@
 					};
 					67F7AB091A86FAC9001C11AF = {
 						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 67F7AAF01A86FAC8001C11AF;
+					};
+					BBEFF9691BFFBB770075662F = {
+						CreatedOnToolsVersion = 7.1.1;
 						TestTargetID = 67F7AAF01A86FAC8001C11AF;
 					};
 				};
@@ -248,6 +300,7 @@
 			targets = (
 				67F7AAF01A86FAC8001C11AF /* CardForm */,
 				67F7AB091A86FAC9001C11AF /* CardFormTests */,
+				BBEFF9691BFFBB770075662F /* CardFormUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +317,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		67F7AB081A86FAC9001C11AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBEFF9681BFFBB770075662F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,6 +359,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBEFF9661BFFBB770075662F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBEFF96D1BFFBB780075662F /* CardFormUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -306,6 +374,11 @@
 			isa = PBXTargetDependency;
 			target = 67F7AAF01A86FAC8001C11AF /* CardForm */;
 			targetProxy = 67F7AB0B1A86FAC9001C11AF /* PBXContainerItemProxy */;
+		};
+		BBEFF9701BFFBB780075662F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67F7AAF01A86FAC8001C11AF /* CardForm */;
+			targetProxy = BBEFF96F1BFFBB780075662F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -341,6 +414,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -383,6 +457,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -453,6 +528,39 @@
 			};
 			name = Release;
 		};
+		BBEFF9711BFFBB780075662F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = CardFormUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hannah.CardFormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = CardForm;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BBEFF9721BFFBB780075662F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = CardFormUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hannah.CardFormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CardForm;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,6 +590,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BBEFF9731BFFBB780075662F /* Build configuration list for PBXNativeTarget "CardFormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBEFF9711BFFBB780075662F /* Debug */,
+				BBEFF9721BFFBB780075662F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
