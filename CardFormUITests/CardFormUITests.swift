@@ -86,7 +86,7 @@ class CardFormUITests: XCTestCase {
         app.buttons["Submit"].tap()
         
         // Check alert message
-        XCTAssertFalse(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: Amex   Number: *** ****** 310005   Expiration Date: 02/16   CVV: 1235"].exists)
+        XCTAssert(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: Amex   Number: 378 282246 310005   Expiration Date: 02/16   CVV: 1235"].exists)
         
     }
     
@@ -119,7 +119,7 @@ class CardFormUITests: XCTestCase {
         app.buttons["Submit"].tap()
         
         // Check alert message
-        XCTAssertFalse(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: Amex   Number: *** ****** 398431   Expiration Date: 11/18   CVV: 4358"].exists)
+        XCTAssert(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: Amex   Number: 371 449635 398431   Expiration Date: 11/18   CVV: 4358"].exists)
     }
     
     func testDiscoverAllValid1() {

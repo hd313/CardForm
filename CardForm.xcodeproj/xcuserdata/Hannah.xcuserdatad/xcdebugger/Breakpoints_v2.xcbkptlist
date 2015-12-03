@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFormUITests/CardFormUITests.swift"
-            timestampString = "470869930.778414"
+            timestampString = "470870087.667077"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "428"
-            endingLineNumber = "428"
+            startingLineNumber = "409"
+            endingLineNumber = "409"
             landmarkName = "testInvalidNumberDinersClub2()"
             landmarkType = "5">
          </BreakpointContent>
