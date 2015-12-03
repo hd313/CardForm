@@ -31,8 +31,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
-            landmarkName = "tearDown()"
-            landmarkType = "5">
+            landmarkName = "CardFormUITests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "157"
             endingLineNumber = "157"
-            landmarkName = "testDiscoverAllValid1()"
+            landmarkName = "testDiscoverAllValid2()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFormUITests/CardFormUITests.swift"
-            timestampString = "470104816.553426"
+            timestampString = "470869930.778414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "422"
-            endingLineNumber = "422"
-            landmarkName = "testInvalidNumberDinersClub1()"
+            startingLineNumber = "428"
+            endingLineNumber = "428"
+            landmarkName = "testInvalidNumberDinersClub2()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

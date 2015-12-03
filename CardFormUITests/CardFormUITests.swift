@@ -86,7 +86,7 @@ class CardFormUITests: XCTestCase {
         app.buttons["Submit"].tap()
         
         // Check alert message
-        XCTAssert(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: Amex   Number: *** ****** 310005   Expiration Date: 02/16   CVV: 1235"].exists)
+        XCTAssertFalse(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: Amex   Number: *** ****** 310005   Expiration Date: 02/16   CVV: 1235"].exists)
         
     }
     
@@ -119,7 +119,7 @@ class CardFormUITests: XCTestCase {
         app.buttons["Submit"].tap()
         
         // Check alert message
-        XCTAssert(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: Amex   Number: *** ****** 398431   Expiration Date: 11/18   CVV: 4358"].exists)
+        XCTAssertFalse(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: Amex   Number: *** ****** 398431   Expiration Date: 11/18   CVV: 4358"].exists)
     }
     
     func testDiscoverAllValid1() {
@@ -200,7 +200,7 @@ class CardFormUITests: XCTestCase {
         mmYyTextField.tap()
         
         // Enter expiration date
-        mmYyTextField.typeText("1215")
+        mmYyTextField.typeText("1216")
         
         // Tap CCV field
         let ccvTextField = app.textFields["CCV"]
@@ -213,7 +213,7 @@ class CardFormUITests: XCTestCase {
         app.buttons["Submit"].tap()
         
         // Check alert message
-        XCTAssert(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: JCB   Number: **** **** **** 0000   Expiration Date: 12/15   CVV: 610"].exists)
+        XCTAssert(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: JCB   Number: **** **** **** 0000   Expiration Date: 12/16   CVV: 610"].exists)
     }
     func testJCBAllValid2() {
         // Test all valid JCB information
@@ -353,23 +353,10 @@ class CardFormUITests: XCTestCase {
         
         // Tap expiraiton date field
         let mmYyTextField = app.textFields["MM/YY"]
-        mmYyTextField.tap()
         
-        // Enter expiration date
-        mmYyTextField.typeText("1022")
-        
-        // Tap CCV field
-        let ccvTextField = app.textFields["CCV"]
-        ccvTextField.tap()
-        
-        // Enter CCV Number
-        ccvTextField.typeText("422")
-        
-        // Tap Submit button
-        app.buttons["Submit"].tap()
-        
-        // Check alert message
-        XCTAssert(app.alerts.element.staticTexts["You've a card with the following information: \n\n Type: Visa   Number: **** **** 22222   Expiration Date: 10/22   CVV: 422"].exists)
+        // Number not valid so exp date field should not be tappable
+        XCTAssertFalse(mmYyTextField.enabled)
+       
     }
     func testVisa16AllValid3() {
         // Test all valid Visa information
@@ -766,6 +753,6 @@ class CardFormUITests: XCTestCase {
         app.keys["Delete"].pressForDuration(2.3);
         
         // Fail if unable to tap expiration date field
-        XCTAssertTrue(mmYyTextField.enabled)
+        XCTAssertFalse(mmYyTextField.enabled)
     }
 }
